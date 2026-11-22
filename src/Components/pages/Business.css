@@ -1,0 +1,141 @@
+.business-page{
+	width: 100%;
+	margin: 0;
+	color: whitesmoke;
+	background-image: linear-gradient(
+        rgba(8, 0, 58, 0.7),
+        rgba(8, 0, 58, 0.7)
+    ), url('../../assets/building3.jpg');;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.business-hero{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 80px 24px;
+}
+.business-text{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+.business-text h1{
+    font-size: clamp(40px, 5vw, 70px);
+	font-weight: 600;
+	line-height: 1.2;
+	margin: 0;
+	color: white;
+}
+.business-text p{
+    max-width: 700px;
+    margin: 15px auto 25px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.business-hero-text{
+	max-width: 700px;
+	margin: 15px auto 25px;
+	line-height: 1.5;
+	color: white;
+	font-size: 16px;
+}
+.business-btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	background: white;
+	color: #111;
+	padding: 14px 25px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 15px;
+	transition: transform 0.3s ease;
+}
+.business-btn:hover{
+	transform: translateY(-3px);
+}
+.business-section{
+	width: 100%;
+	max-width: 1400px;
+	margin: -40px auto 0;
+	padding: 80px 5%;
+	box-sizing: border-box;
+	background:transparent;
+	scroll-margin-top: 80px;
+}
+.business-row{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6%;
+	padding: 64px 0;
+}
+.business-row:nth-child(2){
+	flex-direction: row-reverse;
+}
+
+.business-left{
+	flex: 0 0 40%;
+	max-width: 420px;
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.business-img{
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.business-right{
+	flex: 0 1 56%;
+	min-width: 0;
+}
+.business-right{
+	font-size: 25px;
+	margin: 8px 0;
+	color: white;
+}
+.business-right h2{
+	font-size: 25px;
+	margin: 8px 0;
+	color: white;
+}
+.business h3{
+	font-weight: 600;
+	font-size: 16px;
+	color: #dfe4ff;
+	max-width: 500px;
+}
+.business-right p,
+.business-right li{
+	color: rgba(255, 255, 255, 0.95);
+	line-height: 1.6;
+}
+.business-right p{
+	margin-bottom: 15px;
+}
+.business-right li{
+	margin-bottom: 10px;
+}
+
+.business-right h2,
+.business-right h3{
+	color: white;
+}
+.business-right h3{
+	color: #dfe4ff;
+}

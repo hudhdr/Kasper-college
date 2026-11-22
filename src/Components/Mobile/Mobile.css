@@ -1,0 +1,570 @@
+@media (min-width: 841px) {
+    nav .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 220px;
+        padding-top: 70px;
+        background: #212ea0;
+        z-index: 9;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 40px;
+    }
+
+    nav .menu-icon {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    nav .menu-icon img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hide-mobile-menu {
+        right: -220px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 700px;
+        padding-inline: 16px;
+        box-sizing: border-box;
+        transform: none;
+    }
+
+    .title {
+        margin: 50px 16px 24px;
+        box-sizing: border-box;
+    }
+
+    .programs {
+        width: 90%;
+        margin: 50px auto;
+        flex-wrap: wrap;
+        transform: none;
+    }
+
+    .program {
+        flex: 1 1 calc(50% - 10px);
+        max-width: 340px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        transform: none;
+    }
+
+    .gallery img {
+        width: 30%;
+    }
+
+    .campus .btn {
+        transform: none;
+    }
+
+    .rule-row {
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        padding: 48px 0;
+    }
+
+    .rule-row:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .rules-left {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .rules-right {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .testi {
+        margin: 60px auto;
+        padding: 0 32px;
+    }
+
+    .slider ul {
+        width: 400%;
+    }
+
+    .slider ul li {
+        width: 25%;
+    }
+
+    .slide {
+        box-sizing: border-box;
+        padding: 28px;
+    }
+
+    .contact {
+        width: min(680px, calc(100% - 32px));
+        margin: 40px auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 24px;
+        transform: none;
+    }
+
+    .contact-call {
+        width: 100%;
+        max-width: none;
+        flex: 0 1 auto;
+        box-sizing: border-box;
+    }
+
+    .contact form {
+        width: 100%;
+        max-width: none;
+        flex: 0 1 auto;
+        box-sizing: border-box;
+    }
+
+    .about-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .about-row:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .about-left {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+    }
+
+    .about-right {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+    }
+
+    .about-img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .business-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .business-row:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .business-left {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+    }
+
+    .business-right {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+    }
+
+    .business-img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .footer {
+        width: calc(100% - 32px);
+        margin: 24px auto 16px;
+        padding: 18px 20px;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 8px 16px;
+    }
+
+    .hero {
+        min-height: 100svh;
+        padding: 100px 16px 40px;
+        box-sizing: border-box;
+    }
+
+    .hero-text {
+        max-width: none;
+        padding: 0;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(36px, 12vw, 48px);
+        line-height: 1.12;
+    }
+
+    .hero-text p {
+        max-width: 100%;
+        margin: 12px auto 20px;
+        font-size: 15px;
+    }
+
+    .title {
+        margin: 40px 0 20px;
+    }
+
+    .title p {
+        font-size: 13px;
+    }
+
+    .title h2 {
+        font-size: 26px;
+    }
+
+    .programs {
+        width: 100%;
+        margin: 40px auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .program {
+        width: 100%;
+        max-width: none;
+        flex-basis: auto;
+    }
+
+    .caption {
+        padding-top: 0;
+        opacity: 1;
+        background: rgba(0, 15, 152, 0.25);
+    }
+
+    .campus {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .gallery {
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .gallery img {
+        width: calc(50% - 6px);
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .rules {
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .rule-row {
+        gap: 20px;
+        padding: 32px 0;
+    }
+
+    .rules h2 {
+        font-size: 22px;
+    }
+
+    .testi {
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .next-btn {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        top: 42%;
+    }
+
+    .back-btn {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        top: 42%;
+    }
+
+    .slider ul li {
+        padding: 8px;
+    }
+
+    .slide {
+        padding: 20px;
+    }
+
+    .slide img {
+        width: 52px;
+        border-width: 3px;
+    }
+
+    .user-info {
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+
+    .contact {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+        gap: 20px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .contact-call h3 {
+        margin-bottom: 16px;
+        gap: 10px;
+        font-size: 23px;
+    }
+
+    .contact-call h3 img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .contact-call,
+    .contact-call ul,
+    .contact-call ul li,
+    .contact-call p {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .contact-call ul li {
+        grid-template-columns: 22px minmax(0, 1fr);
+        column-gap: 10px;
+        margin: 14px 0;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .contact form {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .contact form input {
+        margin-bottom: 14px;
+        padding: 12px 14px;
+    }
+
+    .contact form textarea {
+        margin-bottom: 14px;
+        padding: 12px 14px;
+        min-height: 100px;
+    }
+
+    .about-hero {
+        min-height: 100svh;
+        padding: 100px 16px 40px;
+        box-sizing: border-box;
+    }
+
+    .about-section {
+        padding: 32px 16px 48px;
+        box-sizing: border-box;
+    }
+
+    .about-row {
+        gap: 18px;
+        padding: 28px 0;
+    }
+
+    .about-right h2 {
+        font-size: 22px;
+    }
+
+    .business-hero {
+        min-height: 100svh;
+        padding: 100px 16px 40px;
+        box-sizing: border-box;
+    }
+
+    .business-section {
+        padding: 32px 16px 48px;
+        box-sizing: border-box;
+    }
+
+    .business-row {
+        gap: 18px;
+        padding: 28px 0;
+    }
+
+    .business-right h2 {
+        font-size: 22px;
+    }
+
+    .Student.container {
+        min-height: 100svh;
+        background-attachment: scroll;
+    }
+
+    .Student .Student-text {
+        min-height: 100svh;
+        padding: 64px 20px;
+    }
+
+    .Student-text h1 {
+        font-size: clamp(36px, 10vw, 52px);
+        line-height: 1.12;
+    }
+
+    .Student-text p {
+        max-width: 40rem;
+        font-size: 15px;
+        line-height: 1.65;
+        margin: 16px auto 24px;
+    }
+
+    .Student-text .btn {
+        min-height: 48px;
+        padding: 12px 22px;
+    }
+
+    .courses {
+        padding: 36px 16px 48px;
+    }
+
+    .slide-content {
+        border-radius: 14px;
+    }
+
+    .course-card {
+        padding: 24px 20px;
+        border-radius: 14px;
+    }
+
+    .course-card h3 {
+        font-size: 21px;
+    }
+
+    .course-card dl {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 10px 12px;
+        font-size: 14px;
+    }
+
+    .slider-controls {
+        gap: 12px;
+    }
+
+    .slider-controls button {
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+
+    .footer {
+        width: calc(100% - 32px);
+        min-height: 0;
+        margin: 24px auto 16px;
+        padding: 18px 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-links {
+        width: 100%;
+    }
+
+    .back-to-top-button {
+        right: 16px;
+        bottom: 16px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 380px) {
+    nav {
+        padding-inline: 12px;
+    }
+
+    nav ul {
+        width: min(200px, 80vw);
+    }
+
+    .hide-mobile-menu {
+        right: -80vw;
+    }
+
+    .courses {
+        padding-inline: 12px;
+    }
+
+    .course-card {
+        padding: 20px 16px;
+    }
+
+    .course-card dl {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .course-card dd {
+        margin-bottom: 8px;
+    }
+
+    .contact {
+        width: calc(100% - 16px);
+    }
+
+    .footer {
+        width: calc(100% - 24px);
+    }
+}

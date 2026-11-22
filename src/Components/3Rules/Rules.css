@@ -1,0 +1,68 @@
+.rules{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.rule-row{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4%;
+}
+.rule-row:nth-child(2){
+    flex-direction: row-reverse;
+}
+.rules-left{
+    flex:0 0 40%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.rules-right {
+    flex: 0 1 56%;
+}
+.rules-img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.rules h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #212ea0;
+    max-width: 400px;
+}
+.rules h2{
+    font-size: 25px;
+    margin: 8px 0;
+}
+.rules p{
+    color: #676767;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.rules-left::after{
+    content:'';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: rgba(0,15,152,0.3);
+    box-shadow: inset 0 0 50px rgba(33,46,160,0.35);
+
+    opacity: 1;
+    pointer-events: none;
+}
+@supports (animation-timeline: view()) {
+    .rule-row{
+        view-timeline-name: --rule-scroll;
+        view-timeline-name: block;
+    }
+    .rules-left, 
+    .rules-right{
+        animation: ruleFadeOut linear both;
+        animation-timeline: --rule-scroll;
+        animation-range: exit 0% exit 75%;
+    }
+}
