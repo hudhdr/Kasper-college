@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useInRouterContext, useLocation } from 'react-router-dom'
 
-import Navbar from './Components/NavBar/Navbar'
+import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Programs from './Components/programs/programs'
 import Title from './Components/Title/Title'
